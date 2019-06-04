@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvClase"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/clase"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvInfoPers"
+            app:layout_constraintTop_toBottomOf="@+id/spRaza" />
+
+        <TextView
+            android:id="@+id/tvNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/nivel"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvInfoPers"
+            app:layout_constraintTop_toBottomOf="@+id/spClase" />
+
+        <Spinner
+            android:id="@+id/spClase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvClase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvNombre"
+            app:layout_constraintTop_toTopOf="@+id/tvClase" />
+
+        <Spinner
+            android:id="@+id/spNivel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNivel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvNombre"
+            app:layout_constraintTop_toTopOf="@+id/tvNivel" />
+
+        <TextView
+            android:id="@+id/tvInfoPers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/informaci_n_personal"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/nombre"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvInfoPers"
+            app:layout_constraintTop_toBottomOf="@+id/tvInfoPers" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:ems="10"
+            android:hint="@string/name_of_your_character"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tvNombre"
+            app:layout_constraintTop_toTopOf="@+id/tvNombre" />
+
+        <TextView
+            android:id="@+id/tvRaza"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/raza"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvInfoPers"
+            app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+        <Spinner
+            android:id="@+id/spRaza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRaza"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvNombre"
+            app:layout_constraintTop_toTopOf="@+id/tvRaza" />
+
+        <TextView
+            android:id="@+id/tvAtributos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/atributos"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spNivel" />
+
+        <TextView
+            android:id="@+id/tvPuntuaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/puntuaciones_a_repartir_15_14_13_12_10_8"
+            app:layout_constraintStart_toStartOf="@+id/tvAtributos"
+            app:layout_constraintTop_toBottomOf="@+id/tvAtributos" />
+
+        <TextView
+            android:id="@+id/tvFuerza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fuerza"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintStart_toStartOf="@+id/tvAtributos"
+            app:layout_constraintTop_toBottomOf="@+id/tvPuntuaciones" />
+
+        <Spinner
+            android:id="@+id/spFuerza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFuerza"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintTop_toTopOf="@+id/tvFuerza"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/tvDestreza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/destreza"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintStart_toStartOf="@+id/tvAtributos"
+            app:layout_constraintTop_toBottomOf="@+id/spFuerza" />
+
+        <TextView
+            android:id="@+id/tvConstitucion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/constituci_n"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvAtributos"
+            app:layout_constraintTop_toBottomOf="@+id/spDestreza" />
+
+        <TextView
+            android:id="@+id/tvInteligencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/inteligencia"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintStart_toStartOf="@+id/tvAtributos"
+            app:layout_constraintTop_toBottomOf="@+id/spConstitucion" />
+
+        <TextView
+            android:id="@+id/tvSabiduria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sabidur_a"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintStart_toStartOf="@+id/tvAtributos"
+            app:layout_constraintTop_toBottomOf="@+id/spInteligencia" />
+
+        <TextView
+            android:id="@+id/tvCarisma"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/carisma"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintStart_toStartOf="@+id/tvAtributos"
+            app:layout_constraintTop_toBottomOf="@+id/spSabiduria" />
+
+        <Spinner
+            android:id="@+id/spDestreza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDestreza"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintTop_toTopOf="@+id/tvDestreza" />
+
+        <Spinner
+            android:id="@+id/spConstitucion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvConstitucion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintTop_toTopOf="@+id/tvConstitucion" />
+
+        <Spinner
+            android:id="@+id/spInteligencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvInteligencia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintTop_toTopOf="@+id/tvInteligencia" />
+
+        <Spinner
+            android:id="@+id/spSabiduria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSabiduria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintTop_toTopOf="@+id/tvSabiduria" />
+
+        <Spinner
+            android:id="@+id/spCarisma"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCarisma"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvConstitucion"
+            app:layout_constraintTop_toTopOf="@+id/tvCarisma" />
+
+        <Button
+            android:id="@+id/btCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancelar"
+            app:layout_constraintEnd_toEndOf="@+id/tvCarisma"
+            app:layout_constraintTop_toBottomOf="@+id/tvCarisma" />
+
+        <Button
+            android:id="@+id/btGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar"
+            app:layout_constraintStart_toStartOf="@+id/spCarisma"
+            app:layout_constraintTop_toTopOf="@+id/btCancelar" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

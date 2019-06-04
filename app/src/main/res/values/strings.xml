@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Creador_Personajes</string>
+    <string name="clase">Clase</string>
+    <string name="nivel">Nivel</string>
+    <string name="informaci_n_personal">Información personal</string>
+    <string name="nombre">Nombre</string>
+    <string name="name_of_your_character">Name of your character</string>
+    <string name="raza">Raza</string>
+    <string name="atributos">Atributos</string>
+    <string name="puntuaciones_a_repartir_15_14_13_12_10_8">Puntuaciones a repartir: 15, 14, 13, 12, 10, 8</string>
+    <string name="fuerza">FUERZA</string>
+    <string name="destreza">DESTREZA</string>
+    <string name="constituci_n">CONSTITUCIÓN</string>
+    <string name="inteligencia">INTELIGENCIA</string>
+    <string name="sabidur_a">SABIDURÍA</string>
+    <string name="carisma">CARISMA</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="guardar">Guardar</string>
+</resources>
